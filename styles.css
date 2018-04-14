@@ -22,16 +22,16 @@ h1 {
 
 h4 {
     color: #000;
-    margin: 15px auto;
-}
-
-h5 {
-    margin: 15px auto;
+    margin: 15px auto 30px;
 }
 
 img {
     cursor: pointer;
     border: 2px solid #144d5b;
+}
+
+button {
+    cursor: pointer;
 }
 
 .small-img-container {
@@ -52,11 +52,6 @@ img {
     width: 60%;
 }
 
-/*
-span {
-    margin: 10px auto;
-}*/
-
 .big-img {
     display: flex;
     flex-direction: column;
@@ -68,16 +63,57 @@ span {
 }
 
 #cat-img-big {
-    width: 60%;
-    margin: 10px auto;
+    width: 40%;
+    margin: 0 auto;
 }
 
-#cat-info {
-    margin: 40px auto 10px;
+.cat-info {
+    margin: 10px auto;
     font-size: 1.3em;
+    text-align: center;
+}
+
+.cat-info p {
+    margin: 10px 0 0;
 }
 
 #cat-name {
     color: #144d5b;
     font-weight: 700;
+}
+
+/* ADMIN MODE */
+
+.admin-mode {
+    margin-left: 30px;
+}
+
+.display {
+    display: none;
+}
+
+.panel {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.panel button {
+    margin-top: 10px;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.button-container button {
+    width: 90px;
 }

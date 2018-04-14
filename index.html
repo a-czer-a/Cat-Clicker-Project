@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto|Yanone+Kaffeesatz" rel="stylesheet">
@@ -10,35 +11,59 @@
     <div class="container">
         <h1>The Cat Clicker</h1>
         <h4>How many times can you click the cat?</h4>
-        <h5>Choose a cat</h5>
         <div class="small-img-container">
             <div class="cat">
                 <img id="cat1-img" class="small-img" src="https://images.pexels.com/photos/33537/cat-animal-cat-portrait-mackerel.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="cat">
-                <p>Pixie Dixie</p>
+                <p class="cat-name-small">Pixie Dixie</p>
             </div>
             <div class="cat">
                 <img id="cat2-img" class="small-img" src="https://images.pexels.com/photos/104827/cat-pet-animal-domestic-104827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="cat">
-                <p>Catty Patty</p>
+                <p class="cat-name-small">Catty Patty</p>
             </div>
             <div class="cat">
                 <img id="cat3-img" class="small-img" src="https://images.pexels.com/photos/747795/pexels-photo-747795.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="cat">
-                <p>Ulala</p>
+                <p class="cat-name-small">Ulala</p>
             </div>
             <div class="cat">
                 <img id="cat4-img" class="small-img" src="https://images.pexels.com/photos/416195/pexels-photo-416195.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="cat">
-                <p>Waffer</p>
+                <p class="cat-name-small">Waffer</p>
             </div>
             <div class="cat">
                 <img id="cat5-img" class="small-img" src="https://images.pexels.com/photos/358464/pexels-photo-358464.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="cat">
-                <p>Powder Puff</p>
+                <p class="cat-name-small">Powder Puff</p>
             </div>
         </div>
-        <div id="big-img-container" class="big-img hidden">
-            <p id="cat-info">You have clicked <span id="cat-name">cat name </span><span id="clicks">0</span></p>
-            <img id="cat-img-big" src="" alt="cat">
-        </div>
-    </div>
+        <div id="big-img-container" class="big-img">
 
-    <script src="script.js "></script>
+            <!--<p id="cat-info">You have clicked <span id="cat-name">cat name </span><span id="clicks">0</span></p>-->
+            <img id="cat-img-big" src="" alt="cat">
+
+            <div class="cat-info">
+                <p id="cat-name"></p>
+                <p id="clicks"></p>
+            </div>
+        </div>
+
+        <!--        ADMIN MODE -->
+        <div class="admin-mode">
+            <button id="admin-button">Admin</button>
+            <div id="panel" class="panel display">
+                <form action="">
+                    <label for="cat name">Cat name</label>
+                    <input id="cat-name-input" type="text">
+                    <label for="url">URL</label>
+                    <input id="url-input" type="text">
+                    <label for="clicks">Number of clicks</label>
+                    <input id="clicks-input" type="text">
+                </form>
+                <div class="button-container">
+                    <button id="cancel-button">Cancel</button>
+                    <button id="save-button">Save</button>
+                </div>
+            </div>
+        </div>
+
+        <script src="script_MVC.js "></script>
 </body>
+
 </html>
